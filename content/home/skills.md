@@ -2,7 +2,7 @@
 # An instance of the Featurette widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
 widget: featurette
-
+active: false
 # This file represents a page section.
 headless: true
 
@@ -25,7 +25,7 @@ feature:
   icon_pack: fas
   name: Statistics
 - description: 10%
-  icon: camera-retro
+  icon: camera
   icon_pack: fas
   name: Photography
 

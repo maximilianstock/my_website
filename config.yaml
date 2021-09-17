@@ -6,7 +6,7 @@ theme: "starter-hugo-academic"
 
 title: Academic # Website name
 baseurl: 'https://quizzical-poincare-40ef24.netlify.app/' # Website URL
-copyright: '' # Footer text, e.g. '© {year} Me'
+copyright: '© 2021 Maximilian Stock'
 
 ############################
 ## LANGUAGE

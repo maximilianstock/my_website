@@ -1,27 +1,25 @@
 ---
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: I am currently trying to better understand Machine Learning. Also, I am passionate about the world of sports.
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: MSc in Analytics and Management
+    institution: London Business School
+    year: 2022
+  - course: BSc in International Business
+    institution: Maastricht University
+    year: 2020
+  - course: Semester Abroad
+    institution: University of Dubai
+    year: 2019
 email: ""
 highlight_name: true
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Artificial Neural Networks
+- Football & Golfing
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
-role: Professor of Artificial Intelligence
+- name: London Business School
+  url: https://www.london.edu/
+role: Masters Candidate at London Business School
 social:
 - icon: envelope
   icon_pack: fas
@@ -42,11 +40,12 @@ social:
   icon_pack: fab
   link: https://www.linkedin.com/
 superuser: true
-title: Nelson Bighetti
+title: Maximilian Stock
 ---
+---
+Hi, welcome to my website! My name is Max and I am currently reading for a Masters in Analytics and Management at London Business School. On this website, you will primarly find information on the projects that I have been working on so far during my time at LBS, as well as some that I did earlier. 
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Please feel free to contact me and share feedback on my content by using the form at the bottom of this page.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}CV{{< /staticref >}}.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
