@@ -1,0 +1,59 @@
+---
+title: "Approval Ratings"
+summary: "Evolution of Biden's approval ratings since he came to office."
+date: "9/21/2021"
+subtitle: "Evolution of Biden's approval ratings since he came to office."
+author: "Maximilian Stock"
+output: html_document
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="plotting-the-data" class="section level2">
+<h2>Plotting the data</h2>
+<p><em>We have imported the data on Biden’s approval from fivethirtyeight and now start by calculating a confidence interval on his approval ratings.</em></p>
+<pre class="r"><code>approval_polllist$enddate&lt;-mdy(approval_polllist$enddate)
+
+approval_plot&lt;-approval_polllist%&gt;%
+  filter(subgroup==&quot;Voters&quot;)%&gt;% #limit the data to group &quot;Voters&quot; in order to recreate the graph
+  select(enddate,pollster,samplesize,weight,approve, disapprove)%&gt;%
+  mutate(week_poll=week(enddate),mg_approval=approve-disapprove) #obtain the week of the enddate, to plot it against average approval
+
+approval_biden&lt;-approval_plot%&gt;% 
+ group_by(week_poll)%&gt;%
+  summarise(margin_apr_mean=mean(mg_approval),
+            sd_margin=sd(mg_approval),
+            count_pollster=n(),
+            t_critical = qt(0.975,count_pollster-1), #calculate t critical, for 95% confidence (2.5% per side)
+            se_margin=sd_margin/sqrt(count_pollster),
+            lower_interval=margin_apr_mean-t_critical*se_margin,
+            higher_interval=margin_apr_mean+t_critical*se_margin, #calculate confidence interval
+            )</code></pre>
+<pre><code>## Warning in qt(0.975, count_pollster - 1): NaNs produced</code></pre>
+<p><em>Let’s now actually plot the data. The confidence interval is shaded in grey, and the blue line represents a smoothing average across the data points.</em></p>
+<pre class="r"><code>approval_plot1&lt;-ggplot(approval_biden,aes(x=week_poll))+
+  geom_line(aes(y=margin_apr_mean),color=&quot;red&quot;,size=0.5)+
+  geom_point(aes(y=margin_apr_mean),color=&quot;red&quot;,size=0.8)+
+  geom_smooth(aes(y=margin_apr_mean),se=FALSE,size=0.8)+
+  geom_line(aes(y=lower_interval),color=&quot;pink&quot;,size=0.3)+
+  geom_line(aes(y=higher_interval),color=&quot;pink&quot;,size=0.3)+
+  geom_ribbon(aes(ymin=higher_interval,ymax=lower_interval),fill=&quot;grey&quot;,alpha=0.3)+
+  geom_hline(yintercept =0,color=&quot;orange&quot;,size=1)+
+  
+  labs(x=&quot;Week of the year&quot;,y=&quot;Average approval margin (approval - disapproval)&quot;,
+       title = &quot;Estimating approval margin(approval - disapproval) for Biden&quot;,
+       subtitle = &quot;2021 weekly average of all polls&quot;)+
+  
+  theme_bw()+
+  theme(plot.background = element_rect(fill = NA , colour = &#39;grey&#39;,size=0.1))+
+  theme(panel.border = element_rect(colour = NA, fill=NA))+
+  ylim(-15,30)
+     
+approval_plot1</code></pre>
+<pre><code>## `geom_smooth()` using method = &#39;loess&#39; and formula &#39;y ~ x&#39;</code></pre>
+<pre><code>## Warning: Removed 2 row(s) containing missing values (geom_path).
+
+## Warning: Removed 2 row(s) containing missing values (geom_path).</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/biden_plot-1.png" width="1056" /></p>
+</div>

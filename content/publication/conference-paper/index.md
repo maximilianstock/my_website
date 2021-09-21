@@ -1,53 +1,27 @@
 ---
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus
-  ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed
-  ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis
-  sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida
-  egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id
-  dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.
-  Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: 
 authors:
 - admin
-- Robert Ford
-date: "2013-07-01T00:00:00Z"
+- Maximilian Stock
+date: "2020-06-18T00:00:00Z"
 doi: ""
 featured: true
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/lrFrjPxt7ZM)'
   focal_point: ""
   preview_only: false
-links:
-- name: Custom Link
-  url: http://example.org
-projects:
-- internal-project
-publication: In *Source Themes Conference*
-publication_short: In *STC*
+
+
+publication:
+publication_short: 
 publication_types:
 - "1"
-publishDate: "2017-01-01T00:00:00Z"
-slides: example
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus
-  ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+publishDate: "2020-06-18T00:00:00Z"
+summary: The paper develops a general framework categorizing key determinants of positive abnormal stock returns following a firm's issuance of green bonds and moreover aims at synthesizing opposing academic findings. Furthermore, this paper contributes to society by providing explicitly stated policy recommendations to overseeing bodies which can be capitalized on by potential issuers of green bonds. Likewise, these recommendations aid in providing an evident degree of transparency and certainty to outside stakeholders. 
 tags:
-- Source Themes
-title: An example conference paper
-url_code: '#'
-url_dataset: '#'
-url_pdf: http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf
-url_poster: '#'
-url_project: ""
-url_slides: ""
-url_source: '#'
-url_video: '#'
+- Green Finance
+- Greenwashing
+title: What are the key drivers of positive abnormal stock returns following a firm’s issuance of green bonds?
+url_pdf: uploads/literature_review_Maximilian_Stock_i6162121.pdf
+
 ---
-
-{{% callout note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /callout %}}
-
-{{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
-{{% /callout %}}
-
-Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).

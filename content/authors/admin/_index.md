@@ -14,7 +14,7 @@ education:
 email: ""
 highlight_name: true
 interests:
-- Artificial Neural Networks
+- Espresso, and everything you can create with it!
 - Football & Golfing
 organizations:
 - name: London Business School
@@ -29,16 +29,13 @@ social:
   icon: twitter
   icon_pack: fab
   label: Follow me on Twitter
-  link: https://twitter.com/GeorgeCushen
-- icon: graduation-cap
-  icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://twitter.com/max_stock7
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/maximilianstock
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://www.linkedin.com/in/m-stock/
 superuser: true
 title: Maximilian Stock
 ---
@@ -47,5 +44,5 @@ Hi, welcome to my website! My name is Max and I am currently reading for a Maste
 
 Please feel free to contact me and share feedback on my content by using the form at the bottom of this page.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}CV{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/CV.pdf" "newtab" >}}CV{{< /staticref >}}.
 
